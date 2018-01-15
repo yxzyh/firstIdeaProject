@@ -18,6 +18,7 @@ public class Task7 {
         MainThread mainThread = new MainThread(threadDo1);
         SubThread subThread = new SubThread(threadDo1);
 
+
         mainThread.start();
         subThread.start();
     }
