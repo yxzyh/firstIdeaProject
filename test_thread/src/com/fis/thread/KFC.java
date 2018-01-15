@@ -16,7 +16,7 @@ public class KFC {
     //生产食物的方法
     public void prod(int index){
         synchronized (this){
-            //如果事物数量大于20
+            //如果食物数量大于20
             while(foods.size() > Max){
                 System.out.println("食材够了！");
                 this.notifyAll();//唤醒生产者和消费者，有all
